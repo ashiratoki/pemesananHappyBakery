@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Rekomendasi</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='menu.css'>
+</head>
+<body>
+    <h1>Rekomendasi Happy Bakery</h1>
+    <div id="buttonMenu"></div>
+    <div id="pertanyaanTelur"></div><br>
+    <div id="pertanyaanManis"></div><br>
+    <div id="pertanyaanSoft"></div><br>
+    <div id="pertanyaanHarga"></div><br>
+    <button onclick="TampilkanRekomendasi()" style="padding: 15px;">Tampilkan Rekomendasi</button>
+    <div>
+        <table>
+            <tr  id="rekomendasi">
+
+            </tr>
+            <tr>
+                <td id="buttonPesan"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="tabelNotaDiv">
+        <table>
+            <!-- Tabel Nota -->
+            <tr>
+                <th style="font-size: 40px;">Pesanan</th>
+            </tr>
+            <tr>
+            <td>
+            <table border="1px light blue">
+                <thead>
+                    <tr>
+                        <th colspan="4" id="tanggal"></th>
+                    </tr>
+                    <tr>
+                        <th>No.</th>
+                        <th>Nama Menu</th>
+                        <th>Kuantitas</th>
+                        <th>Jumlah</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelNota">
+    
+                </tbody>
+                <tr>
+                    <th colspan="3">Total :</th>
+                    <td id="totalHarga"></td>
+                </tr>
+                
+            </table>
+            </td>
+            <td style="font-weight: bold; font-size: 20px;"></td>
+            </tr>
+        </table>
+    <script src='src/rekomendasi.js'></script>
+</body>
+</html>
